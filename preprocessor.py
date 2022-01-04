@@ -31,8 +31,8 @@ def preprocess(data):
     df['year'] = df['date'].dt.year
     df['month_num'] = df['date'].dt.month
     df['month'] = df['date'].dt.month_name()
-    df['day'] = df['date'].dt.day_name()
-    df['day_name'] = df['date'].dt.day
+    df['day'] = df['date'].dt.day
+    df['day_name'] = df['date'].dt.day_name()
     df['only_date'] = df['date'].dt.date
 
     df['hour'] = df['date'].dt.hour
